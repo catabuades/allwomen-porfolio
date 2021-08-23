@@ -417,6 +417,10 @@ a:hover {
   display: block;
 }
 
+.sectionCite {
+  grid-area: sectionCite;
+}
+
 .sectionWebsites ul li:first-child { background-color: #FCFCFF; }
 .sectionWebsites ul li:nth-child(2) { background-color:#F9F8FF; }
 .sectionWebsites ul li:nth-child(3) { background-color:#F6F5FF; }
@@ -437,6 +441,25 @@ a:hover {
   color: #e9ff00;
 }
 
+.sectionCite {
+  text-align: right;
+  font-size: 2rem;
+}
+
+.sectionCite__messageBox {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.sectionCite blockquote {
+  margin: 1.5rem;
+}
+
+.sectionCite cite {
+  display: block;
+}
 
 @media only screen and (min-width: 768px) {
   .sectionGrid {
@@ -447,7 +470,8 @@ a:hover {
     grid-template-areas: 
     "sectionDescription sectionDescription"
     "sectionWish sectionList"
-    "sectionWebsites sectionWebsites";
+    "sectionWebsites sectionWebsites"
+    "sectionCite sectionCite";
   }
 
   .section {
@@ -471,6 +495,10 @@ a:hover {
   }
 
   .sectionWebsites {
+    margin-top: -3rem;
+  }
+  
+  .sectionCite {
     margin-top: -3rem;
   }
 }
