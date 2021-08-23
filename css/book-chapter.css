@@ -1,0 +1,116 @@
+.bookChapter {
+  background-color: #FFFAF3;
+  padding: 3rem 1.5rem;
+  font-family: 'Roboto Slab', serif;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  color: #222;
+  text-decoration-color: #E8B23F;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1rem;
+}
+
+a:hover {
+  color: #E8B23F;
+}
+
+hr {
+  border: 2px solid #E8B23F;
+  height: 0;
+}
+
+.small {
+  font-size: .8rem;
+}
+
+.cite--author {
+  font-weight: 700;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.size--medium {
+  font-size: 1.5rem;
+}
+
+.quote--right {
+  text-align: right;
+  margin: 1rem 0;
+}
+
+.blockquote--message {
+  margin: 1rem 0 1rem 10%;
+}
+
+.messageBox {
+  color: #545454;
+  background-color: #e1eae2;
+  font-weight: 300;
+  line-height: 2rem;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.cover {
+  width: auto;
+  display: block;
+  margin: 1rem auto 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .bookChapter {
+    padding: 4rem 2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
+
+  li {
+    font-size: 1.5rem;
+  }
+
+  .small {
+    font-size: 1rem;
+  }
+
+  .size--medium {
+    font-size: 2rem;
+  }
+
+  .blockquote--message {
+    margin: 1rem 0 1rem 20%;
+  }
+
+  .footer {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .cover {
+    margin-right: 2rem;
+  }
+}
