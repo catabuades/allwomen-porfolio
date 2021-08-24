@@ -1,0 +1,21 @@
+.sliderSnap {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  display: flex;
+}
+
+.sliderSnap__item {
+  scroll-snap-align: start;
+  padding-right: 1.5rem;
+}
+
+.sliderSnap__item:last-child {
+  padding-right: 0;
+}
+
+.sliderSnap__item img {
+  height: 300px;
+}

@@ -1,0 +1,138 @@
+h2 {
+  font-size: 2rem;
+}
+
+.sectionGrid {
+  background-color:  #BCD3F2;
+}
+
+.sectionDescription {
+  grid-area: sectionDescription;
+  background-color: #BCD3F2;
+}
+
+.sectionActivitiesOne {
+  grid-area: sectionActivitiesOne;
+}
+
+.sectionActivitiesTwo {
+  grid-area: sectionActivitiesTwo;
+}
+
+.sectionActivities {
+  background-color: #80A4ED;
+  color: #e9ff00;
+}
+
+.sectionActivities__items {
+  margin-top: 1.5rem;
+}
+
+.sectionActivities__items span {
+  display: block;
+  font-size: 10vw;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sectionActivities__items span:first-child {
+  font-style: italic;
+  font-weight: 900;
+}
+
+.sectionActivities__items span:nth-child(2) {
+  text-align: center;
+  font-weight: 300;
+  
+}
+
+.sectionActivities__items span:last-child {
+  text-align: right;
+  font-weight: 500;
+}
+
+.sectionCianotype {
+  grid-area: sectionCianotype;
+  background-color: #0000FE;
+  color: #FFFFFF;
+  padding-bottom: 3rem;
+}
+
+.sectionCianotype a {
+  color: #FFFFFF;
+}
+
+.sectionCianotype a:hover {
+  color: #e9ff00;
+}
+
+.sectionScreenprinting {
+  grid-area: sectionScreenprinting;
+  background-color: #EA7E24;
+}
+
+.sectionCNC {
+  grid-area: sectionCNC;
+  background-color: #E6E1C5;
+}
+
+.sectionCNC video {
+  margin-top: 1.5rem;
+  width: auto;
+  height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .sectionGrid {
+    display: grid;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "sectionDescription sectionDescription"
+    "sectionActivitiesOne sectionActivitiesOne"
+    "sectionCianotype sectionCianotype"
+    "sectionScreenprinting sectionScreenprinting"
+    "sectionCNC sectionCNC"
+    "sectionActivitiesTwo sectionActivitiesTwo";
+  }
+
+  .sectionDescription,
+  .sectionActivities,
+  .sectionCianotype,
+  .sectionScreenprinting,
+  .sectionCNC {
+    margin-bottom: -3rem;
+  }
+
+  .sectionCianotype__columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .sectionCianotype__columns p,
+  .sectionCianotype__columns .sliderSnap {
+    width: 48%;
+  }
+
+  .sectionCNC__columns {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .sectionCNC__columns video {
+    width: auto;
+    height: 500px;
+    margin-right: 3rem;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .sectionDescription p {
+    max-width: 70%;
+  }
+  
+}
