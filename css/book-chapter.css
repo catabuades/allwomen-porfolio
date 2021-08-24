@@ -6,6 +6,10 @@
   margin: 0 auto;
 }
 
+nav {
+  text-align: right;
+}
+
 h1 {
   font-size: 2rem;
 }
