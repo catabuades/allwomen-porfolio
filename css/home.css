@@ -1,0 +1,109 @@
+.sectionGrid {
+  background-color: #23EB8E;
+}
+
+.section h2 {
+  margin-bottom: 1.5rem;
+}
+
+.sectionDescription {
+  grid-area: sectionDescription;
+  background-color: #23EB8E;
+}
+
+.sectionDescription h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.sectionColumns {
+  grid-area: sectionColumns;
+  background-color: #E0FCEF;
+}
+
+.sectionColumnsGrid__item {
+  background-color: #FFFFFF;
+  margin-bottom: 2rem;
+}
+
+.sectionColumnsGrid__item img {
+  width: 100%;
+  height: auto;
+}
+
+.sectionColumnsGrid__item p {
+  margin-top: 0;
+  padding: 1rem;
+}
+
+.sectionSidebar {
+  grid-area: sectionSidebar;
+  background-color: #e9ff00;
+}
+
+.sectionFooter {
+  grid-area: sectionFooter;
+  background-color: #A1F6CF;
+}
+
+@media only screen and (min-width: 768px) {
+  .sectionGrid {
+    display: grid;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "sectionDescription"
+    "sectionColumns"
+    "sectionSidebar"
+    "sectionFooter";
+  }
+
+  .sectionDescription,
+  .sectionColumns,
+  .sectionSidebar {
+    margin-bottom: -3rem;
+  }
+  
+  .sectionDescription h1 {
+    font-size: 4rem;
+  }
+
+  .sectionColumnsGrid__item:hover {
+    background-color: #222;
+  }
+
+  .sectionColumnsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .sectionColumnsGrid__item {
+    width: 47%;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .sectionGrid {
+    display: grid;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "sectionDescription sectionDescription"
+    "sectionColumns sectionSidebar"
+    "sectionFooter sectionFooter";
+  }
+
+  .sectionColumns {
+    margin-right: -1.5rem;
+  }
+
+  .sectionSidebar {
+    margin-left: -1.5rem;
+  }
+}
