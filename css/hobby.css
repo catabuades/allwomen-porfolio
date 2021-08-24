@@ -105,17 +105,6 @@ h2 {
     margin-bottom: -3rem;
   }
 
-  .sectionCianotype__columns {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .sectionCianotype__columns p,
-  .sectionCianotype__columns .sliderSnap {
-    width: 48%;
-  }
-
   .sectionCNC__columns {
     display: flex;
     flex-wrap: nowrap;

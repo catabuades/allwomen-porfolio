@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Alien Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="../css/blog-page.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+    <nav class="topnav" id="myTopnav">
+      <a href="#" class="active">Home</a>
+      <a href="#">Posts</a>
+      <a href="#">Death Ray</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </a>
+    </nav>
+		<header>
+			<div class="leftheader">
+				<a href="/"><img src="../img/exercise-blog/logo.png" alt="Zorgblag's Blog. Click for home. "></a>
+			</div>
+			<div class="rightheader">
+				<h1>Zorgblag's Blog</h1>
+				<p>My So-Called Light-Speed Life</p>
+			</div>
+		</header>
+		<section>
+			<article>
+				<img src="../img/exercise-blog/blog1.png" alt="Earth-Vision Reality TV. ">
+				<h2>Why I still Watch Earth-Vision Reality TV</h2>
+				<p class="posted">Posted October 15, 2018</p>
+				<p>Lots of my Alien friends have moved on from Earth-Vision Reality TV. I hear the same complaints all the time - its too repetitive, there aren’t enough abductions, our plants in high level governments are too obvious. Blah-blah-blah. You know what I say? They are just setting the stage for the next big chapter, and I can’t wait...</p>
+				<p><a href="blog1.html">Read more >> </a></p>
+			</article>
+			<article>
+				<img src="../img/exercise-blog/blog2.png" alt="Proper UFO Maintenance. ">
+				<h2>Proper UFO Maintenance</h2>
+				<p class="posted">Posted October 5, 2018</p>
+				<p>Flying around the galaxy is all well and good, but if you’ve ever found yourself stranded in the middle of an anti-matter cloud for a few millennia, you’ll start wishing you had cared better for your UFO. Here are my top tricks to keep yourself at light speed.</p>
+				<p><a href="blog2.html">Read more >> </a></p>
+			</article>
+		</section>
+	</div>
+  <footer>
+    <p>Legal disclaimer, copyright, etc.</p>
+    <ul>
+      <li><a href="#"><img src="../img/exercise-blog/icon1.png" alt="Social Media 1."></a></li>
+      <li><a href="#"><img src="../img/exercise-blog/icon2.png" alt="Social Media 2."></a></li>
+      <li><a href="#"><img src="../img/exercise-blog/icon3.png" alt="Social Media 3."></a></li>
+      <li><a href="#"><img src="../img/exercise-blog/icon4.png" alt="Social Media 4."></a></li>
+      <li><a href="#"><img src="../img/exercise-blog/icon5.png" alt="Social Media 5."></a></li>
+      <li><a href="#"><img src="../img/exercise-blog/icon6.png" alt="Social Media 6."></a></li>
+      <li><a href="#"><img src="../img/exercise-blog/icon7.png" alt="Social Media 7."></a></li>
+    </ul>
+  </footer>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    
+</body>
+</html>
