@@ -11,6 +11,10 @@
   background-color: #C0D0B7;
 }
 
+.sectionDescription p {
+  margin-top: 0;
+}
+
 .sectionDescription h1 {
   font-size: 3rem;
   font-weight: 800;

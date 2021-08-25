@@ -20,7 +20,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/contact.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -38,7 +38,7 @@
       <a class="topnav__link" href="about.html">About</a>
       <a class="topnav__link" href="hobby.html">Hobby Club</a>
       <a class="topnav__link" href="exercises.html">Exercises</a>
-      <a class="topnav__link" href="contact.html">Contact</a>
+      <a class="topnav__link active" href="contact.html">Contact</a>
       <a href="javascript:void(0);" class="icon" onclick="openMenu()">
         <div></div>
         <div></div>
@@ -49,28 +49,40 @@
 
   <div class="sectionGrid">
     <section class="section sectionDescription">
-      <h1 class="title--noMargin">I just wana say Hello!</h1>
-      <p>This page is for my web development training.</p>
+      <h1 class="title--noMargin">Contact me for new projects.</h1>
+      <div>
+        <img class="wave" src="img/waving-hand.png" title="Waving Hand Emoji">
+      </div>
     </section>
 
-    <section class="section sectionContent">
-      <a href="about.html" title="About">About Page</a>
-      <a href="hobby.html" title="Hobby Club">Hobby Club Page</a>
-      <a href="exercises/book-chapter.html" title="Book Chapter Exercise" target="_blank">Book Chapter</a>
-      <a href="exercises/blog-page.html" title="Blog Page Exercise" target="_blank">Blog Page</a>
+    <section class="section sectionForm">
+      <form class="" action="contact.html" method="post">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="phone">Phone number:</label>
+        <input type="text" id="phone" name="phone">
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="7" name="message"></textarea>
+
+        <input id="send_to" type="hidden" name="send_to" value="yourEmailHere">
+        <button type="submit">Submit</button>
+      </form>
     </section>
 
-    <section class="section sectionSidebar">
-      <img src="img/photo-pass.png">
-    </section>
-
-    <section class="section sectionFooter">
-      <h2>Footer</h2>
+    <section class="sectionMap">
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500px" id="gmap_canvas" src="https://maps.google.com/maps?q=mallorca&t=&z=9&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div></div>
     </section>
   </div>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
+  <script src="js/forms.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

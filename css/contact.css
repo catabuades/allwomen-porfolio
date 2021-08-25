@@ -1,0 +1,100 @@
+.sectionGrid {
+  background-color: #EEE3E9;
+}
+
+.sectionDescription {
+  grid-area: sectionDescription;
+  background-color: #EEE3E9;
+  display: flex;
+}
+
+.sectionForm {
+  grid-area: sectionForm;
+  background-color: #222222;
+}
+
+form {
+  margin-bottom: 1re;
+}
+
+label {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  display: block;
+  margin-bottom: .5rem;
+}
+
+input {
+  margin-bottom: 1.5rem;
+  height: 3rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+  outline-color: #e9ff00;
+  outline-width: 3px;
+  background-color: #f2f2f2;
+}
+
+button {
+  height: 3rem;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-radius: 5px;
+  margin-top: 3rem;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #222222;
+  color: #e9ff00;
+  border: 3px solid #e9ff00;
+}
+
+@media only screen and (min-width: 1024px) {
+  form {
+    width: 70%;
+  }
+}
+
+/*
+* Wave Hand Move
+*/
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+  width: 5rem;
+  height: auto;
+  vertical-align: baseline;
+  margin-left: 1rem;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+/*
+* Map
+*/

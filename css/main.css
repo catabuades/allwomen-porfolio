@@ -274,6 +274,11 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
+h1 {
+  font-size: 3rem;
+  font-style: italic;
+}
+
 p {
   font-size: 2rem;
 }
@@ -337,7 +342,6 @@ a:hover {
   margin-top: 0;
 }
 
-
 .section p:last-child {
   margin-bottom: 0;
 }
@@ -377,8 +381,8 @@ a:hover {
 }
 
 .topnav a.active {
-  background-color: #e8e5ff;
-  color: #222;
+  background-color: #222;
+  color: #e9ff00;
 }
 
 .topnav__link {
@@ -447,7 +451,8 @@ a:hover {
   }
 
   .topnav__link {
-    padding: 2px 2rem;
+    margin-left: 1.5rem;
+    padding: 2px;
   }
 
   .topnav .icon {
