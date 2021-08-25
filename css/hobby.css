@@ -20,7 +20,7 @@ h2 {
 }
 
 .sectionActivities {
-  background-color: #80A4ED;
+  background-color: #96A9F4;
   color: #e9ff00;
 }
 
@@ -53,33 +53,40 @@ h2 {
 
 .sectionCianotype {
   grid-area: sectionCianotype;
-  background-color: #0000FE;
+  background-color: #717FF7;
   color: #FFFFFF;
   padding-bottom: 3rem;
 }
 
-.sectionCianotype a {
-  color: #FFFFFF;
-}
-
-.sectionCianotype a:hover {
-  color: #e9ff00;
-}
-
 .sectionScreenprinting {
   grid-area: sectionScreenprinting;
-  background-color: #EA7E24;
+  background-color: #4B54F9;
 }
 
 .sectionCNC {
   grid-area: sectionCNC;
-  background-color: #E6E1C5;
+  background-color: #262AFC;
 }
 
 .sectionCNC video {
   margin-top: 1.5rem;
   width: auto;
   height: auto;
+}
+
+.sectionCianotype,
+.sectionScreenprinting,
+.sectionCNC,
+.sectionCianotype a,
+.sectionScreenprinting a,
+.sectionCNC a {
+  color: #FFFFFF;
+}
+
+.sectionCianotype a:hover,
+.sectionScreenprinting a:hover,
+.sectionCNC a:hover {
+  color: #e9ff00;
 }
 
 @media only screen and (min-width: 768px) {
