@@ -1,5 +1,5 @@
 .sectionGrid {
-  background-color: #23EB8E;
+  background-color: #C0D0B7;
 }
 
 .section h2 {
@@ -8,7 +8,7 @@
 
 .sectionDescription {
   grid-area: sectionDescription;
-  background-color: #23EB8E;
+  background-color: #C0D0B7;
 }
 
 .sectionDescription h1 {
@@ -17,34 +17,35 @@
   font-style: italic;
 }
 
-.sectionColumns {
-  grid-area: sectionColumns;
-  background-color: #E0FCEF;
+.sectionContent {
+  grid-area: sectionContent;
+  background-color: #99ABA3;
 }
 
-.sectionColumnsGrid__item {
-  background-color: #FFFFFF;
-  margin-bottom: 2rem;
+.sectionContent a {
+  font-size: 10vw;
+  color: #e9ff00;
+  display: block;
 }
 
-.sectionColumnsGrid__item img {
-  width: 100%;
-  height: auto;
-}
-
-.sectionColumnsGrid__item p {
-  margin-top: 0;
-  padding: 1rem;
+.sectionContent a:hover {
+  color: #222;
+  text-decoration-color: #222;
 }
 
 .sectionSidebar {
   grid-area: sectionSidebar;
-  background-color: #e9ff00;
+  background-color: #E6F5CA;
+}
+
+.sectionSidebar img {
+  height: 300px;
+  width: auto;
 }
 
 .sectionFooter {
   grid-area: sectionFooter;
-  background-color: #A1F6CF;
+  background-color: #738790;
 }
 
 @media only screen and (min-width: 768px) {
@@ -55,13 +56,13 @@
     grid-template-columns: 1fr;
     grid-template-areas: 
     "sectionDescription"
-    "sectionColumns"
+    "sectionContent"
     "sectionSidebar"
     "sectionFooter";
   }
 
   .sectionDescription,
-  .sectionColumns,
+  .sectionContent,
   .sectionSidebar {
     margin-bottom: -3rem;
   }
@@ -70,20 +71,9 @@
     font-size: 4rem;
   }
 
-  .sectionColumnsGrid__item:hover {
-    background-color: #222;
-  }
-
-  .sectionColumnsGrid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1.5rem;
-  }
-
-  .sectionColumnsGrid__item {
-    width: 47%;
-    margin-bottom: 0;
+  .sectionContent a {
+    font-size: 6vw;
+    color: #e9ff00;
   }
 }
 
@@ -92,18 +82,29 @@
     display: grid;
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-areas: 
     "sectionDescription sectionDescription"
-    "sectionColumns sectionSidebar"
+    "sectionContent sectionSidebar"
     "sectionFooter sectionFooter";
   }
 
-  .sectionColumns {
+  .sectionContent {
+    padding-right: 1.5rem;
     margin-right: -1.5rem;
+  }
+
+  .sectionContent a {
+    display: inline;
+    margin-right: 1rem;
   }
 
   .sectionSidebar {
     margin-left: -1.5rem;
+  }
+
+  .sectionSidebar img {
+    display: block;
+    margin: 0 auto;
   }
 }
