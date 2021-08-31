@@ -14,29 +14,29 @@
 </head>
 
 <body>
-  <div class="calculatorWrapper">
-    <div class="calculatorScreen">0</div>
-    <div class="calculatorButtons">
-      <button class="calculatorButton calculatorButton--2fr">C</button>
-      <button class="calculatorButton">&larr;</button>
-      <button class="calculatorButton">&divide;</button>
+  <div class="calculatorWrapper" data-calc>
+    <div class="calculatorScreen" data-display>0</div>
+    <div class="calculatorButtons" data-keys>
+      <button class="calculatorButton calculatorButton--2fr" data-action="clear">C</button>
+      <button class="calculatorButton" data-action="delete">&larr;</button>
+      <button class="calculatorButton" data-action="divide">&divide;</button>
       <button class="calculatorButton">7</button>
       <button class="calculatorButton">8</button>
       <button class="calculatorButton">9</button>
-      <button class="calculatorButton">&times;</button>
+      <button class="calculatorButton" data-action="multiply">&times;</button>
       <button class="calculatorButton">4</button>
       <button class="calculatorButton">5</button>
       <button class="calculatorButton">6</button>
-      <button class="calculatorButton">-</button>
+      <button class="calculatorButton" data-action="subtract">-</button>
       <button class="calculatorButton">1</button>
       <button class="calculatorButton">2</button>
       <button class="calculatorButton">3</button>
-      <button class="calculatorButton">&plus;</button>
+      <button class="calculatorButton" data-action="add">&plus;</button>
       <button class="calculatorButton calculatorButton--3fr">0</button>
-      <button class="calculatorButton">&equals;</button>
+      <button class="calculatorButton" data-action="calculate">&equals;</button>
     </div>
   </div>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/calculator.js"></script>
 </body>
 </html>

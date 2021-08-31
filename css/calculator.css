@@ -63,12 +63,14 @@ body {
   background-color: #ebebeb;
 }
 
-.calculatorButton:active {
+.calculatorButton:active,
+.calculatorButton.is-active {
   background-color: #bbbcbe;
 }
 
 .calculatorButton:nth-child(4n+3),
-.calculatorButton:last-child {
+.calculatorButton:last-child,
+.calculatorButton.is-active {
   background-color: #df974c;
   color: #FFFFFF;
 }
