@@ -52,6 +52,11 @@
   background-color: #738790;
 }
 
+.sectionFooter p {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
 @media only screen and (min-width: 768px) {
   .sectionGrid {
     display: grid;
