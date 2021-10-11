@@ -50,6 +50,24 @@
 .sectionFooter {
   grid-area: sectionFooter;
   background-color: #738790;
+  text-align: center;
+}
+
+.sectionFooter__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin: 1.5rem 0 0;
+}
+
+.sectionFooter__list li {
+  margin: 0 1rem;
+}
+
+.sectionFooter__list li img {
+  height: 1.5rem;
+  width: auto;
 }
 
 .sectionFooter p {
@@ -83,6 +101,16 @@
   .sectionContent a {
     font-size: 6vw;
     color: #e9ff00;
+  }
+
+  .sectionFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sectionFooter__list {
+    margin: 0;
   }
 }
 

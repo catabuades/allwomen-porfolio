@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #222222;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Roboto Slab', serif;
+}
+
+.resumeContainer {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    background-color: #FFFFFF;
+}
+
+.resumeHeader {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.resumeHeader__address {
+    position: absolute;
+    right: 0;
+    top: -2rem;
+    max-width: 250px;
+    text-align: right;
+}
+
+.resumeHeader__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #5c63c4;
+}
+
+.resumeContact {
+    list-style: none;
+    padding-left: 0;
+}
+
+.resumeContact__item {
+    margin-bottom: .5rem;
+}
+
+.resumeContact__item:last-child {
+    margin-bottom: 0;
+}
+
+.resumeContact__item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.resumeContact__item:hover a {
+    text-decoration: underline;
+    color: #5c63c4;
+}
+
+.resumeSection {
+    padding: 1.5rem 0;
+}
+
+.resumeSection__title {
+    color: #5c63c4;
+    margin-top: 0;
+    padding-bottom: .5rem;
+    border-bottom: 2px dashed #5c63c4;
+}
+
+.resumeList {
+    list-style: none;
+    padding-left: 0;
+}
+
+.resumeList__item {
+    margin-bottom: 1.5rem;
+}
+
+.resumeList__information {
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.resumeList__date {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.resumeList__content {
+    list-style-type: disc;
+}
+
+.resumeList__content li {
+    margin-bottom: .5rem;
+} 

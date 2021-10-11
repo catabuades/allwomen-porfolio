@@ -1,0 +1,25 @@
+h2 {
+    border-bottom: 2px solid #e9ff00;
+}
+
+.sectionGrid {
+    background-color: #C0D0B7;
+}
+
+.sectionWeek {
+    background-color: #C0D0B7;
+}
+
+.sectionWeek--darker {
+    background-color: #99ABA3;
+}
+
+@media only screen and (min-width: 768px) {
+    .sectionWeek__content {
+        display: flex;
+    }
+
+    .sectionWeek__list {
+        width: 50%;
+    }
+}
