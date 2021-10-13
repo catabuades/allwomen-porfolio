@@ -4,8 +4,11 @@
     --color-black: #222222;
     --color-grey: #3D3D3D;
     --color-white: #FFFFFF;
-    --font-sans-serif: Arial, Helvetica, sans-serif;
-    --font-serif: 'Times New Roman', Times, serif;
+    --font-sans-serif: 'Lato', sans-serif;
+    --font-serif: 'Noto Serif', serif;
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
 } 
 
 body {
@@ -16,6 +19,10 @@ body {
 
 img {
     width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-bold);
 }
 /* -------------------------------------------------------------- */
 
@@ -140,7 +147,7 @@ img {
 }
 
 .post__description > p:first-child {
-    font-weight: 700; 
+    font-weight: var(--font-weight-semibold);
 }
 
 @media only screen and (min-width: 1024px) {
@@ -169,7 +176,6 @@ img {
     font-family: var(--font-serif);
     font-size: 2rem;
 }
-
 
 .postRecipe__title {
     margin-top: 0;
@@ -200,7 +206,7 @@ img {
 }
 
 .postTips__title {
-    font-weight: 400;
+    font-weight: var(--font-weight-regular);
 }
 
 @media only screen and (min-width: 1024px) {
