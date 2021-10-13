@@ -14,6 +14,15 @@ h2 {
     background-color: #99ABA3;
 }
 
+.sectionWeek__list li,
+.sectionWeek__list li a {
+    padding: .1rem;
+}
+
+.sectionWeek__list li a:hover {
+    background-color: #222222;
+}
+
 @media only screen and (min-width: 768px) {
     .sectionWeek__content {
         display: flex;
