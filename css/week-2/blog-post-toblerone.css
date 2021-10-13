@@ -1,0 +1,234 @@
+/* ---------------------------- COMMON -------------------------- */
+:root {
+    --background-blog: #eeeeee;
+    --color-black: #222222;
+    --color-grey: #3D3D3D;
+    --color-white: #FFFFFF;
+    --font-sans-serif: Arial, Helvetica, sans-serif;
+    --font-serif: 'Times New Roman', Times, serif;
+} 
+
+body {
+    background-color: var(--background-blog);
+    font-family: var(--font-sans-serif);
+    color: var(--color-black);
+}
+
+img {
+    width: 100%;
+}
+/* -------------------------------------------------------------- */
+
+/* ---------------------------- HEADER -------------------------- */
+.header {
+    padding: 1rem;
+}
+
+.header__logo {
+    width: 160px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 1024px) {
+    .header {
+        padding: 1.5rem;
+    }
+    .header__logo {
+        width: 320px;
+    } 
+}
+/* -------------------------------------------------------------- */
+
+/* ------------------- HEADER NAVIGATION ------------------------ */
+.headerNav {
+    margin: 1rem 0;
+}
+
+.headerNav__list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerNav__listItem {
+    margin: 0 .5rem;
+}
+
+.headerNav__anchor {
+    font-weight: 600;
+    color: var(--color-black);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* -------------------------------------------------------------- */
+
+/* ------------------- POST HEADER - MAIN ----------------------- */
+.postHeader {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-image: url('../../img/week-2/chocolate.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.postHeader__content {
+    font-family: var(--font-serif);
+    background-color: var(--background-blog);
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2.5rem 3rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0);
+}
+
+.postHeader__title {
+    font-size: 2.5rem;
+}
+
+@media only screen and (min-width: 1024px) {
+    .postHeader {
+        height: 500px;
+    }
+
+    .postHeader__content {
+        width: 70%;
+        max-width: 900px;
+    }
+
+    .postHeader__title {
+        font-size: 3.5rem;
+    }
+
+}
+/* -------------------------------------------------------------- */
+
+/* --------------------- POST CONTENT - MAIN -------------------- */
+.post__content {
+    padding: 1.5rem;
+    position: relative;
+}
+
+.post__content:before {
+    content: '';
+    width: 80px;
+    height: 1px;
+    display: block;
+    margin-top: 1rem;
+    background-color: var(--color-black);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-40px, 0);
+}
+
+.post__description > p {
+    color: var(--color-grey);
+    margin: 1.5rem 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.post__description > p:first-child {
+    font-weight: 700; 
+}
+
+@media only screen and (min-width: 1024px) {
+    .post__content {
+        width: 70%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .post__image {
+        max-width: 800px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+/* -------------------------------------------------------------- */
+
+/* --------------------- POST CONTENT - MAIN -------------------- */
+.postRecipe {
+    background-color: var(--color-white);
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.postRecipe__title {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+}
+
+
+.postRecipe__title {
+    margin-top: 0;
+}
+
+.postRecipe__details:after {
+    content: '';
+    width: 80px;
+    height: 1px;
+    display: block;
+    margin-top: 1rem;
+    background-color: var(--color-black);
+}
+
+.postRecipe__list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.postRecipe__list li:nth-child(2),
+.postRecipe__list li:nth-child(5) {
+    margin-bottom: 1rem;
+}
+
+.postSteps,
+.postTips {
+    margin-top: 2rem;
+}
+
+.postTips__title {
+    font-weight: 400;
+}
+
+@media only screen and (min-width: 1024px) {
+    .postRecipe {
+        padding: 2rem;
+    }
+}
+
+/* -------------------------------------------------------------- */
+
+/* ------------------------- FOOTER ----------------------------- */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__logo {
+    width: 200px;
+}
+
+.footer__legal {
+    font-family: var(--font-serif);
+}
+
+@media only screen and (min-width: 1024px) {
+    .footer__logo {
+        width: 100px;
+    }
+}
+/* -------------------------------------------------------------- */
