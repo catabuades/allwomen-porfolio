@@ -1,102 +1,216 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>About</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <title>About</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="manifest" href="site.webmanifest" />
+		<link rel="apple-touch-icon" href="icon.png" />
+		<!-- Place favicon.ico in the root directory -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/about.css" />
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/about.css">
+		<meta name="theme-color" content="#fafafa" />
+	</head>
 
-  <meta name="theme-color" content="#fafafa">
-</head>
+	<body>
+		<header class="app-header header">
+			<nav class="topnav" id="myTopnav">
+				<div class="header__title">
+					<div class="header__titleText">
+						<a href="index.html" title="Home page">CATA BUADES</a>
+					</div>
+				</div>
+				<a
+					class="topnav__link active"
+					href="about.html"
+					title="About page"
+					>About</a
+				>
+				<a
+					class="topnav__link"
+					href="hobby.html"
+					title="Hobby Club page"
+					>Hobby Club</a
+				>
+				<a
+					class="topnav__link"
+					href="exercises.html"
+					title="Exercises page"
+					>Exercises</a
+				>
+				<a
+					class="topnav__link active"
+					href="projects.html"
+					title="Projects page"
+					>Projects</a
+				>
+				<a class="topnav__link" href="contact.html" title="Contact page"
+					>Contact</a
+				>
+				<a
+					href="javascript:void(0);"
+					class="icon"
+					onclick="openMenu()"
+					title="Menu button">
+					<div></div>
+					<div></div>
+					<div></div>
+				</a>
+			</nav>
+		</header>
 
-<body>
-  <header class="app-header header">
-    <nav class="topnav" id="myTopnav">
-      <div class="header__title">
-        <div class="header__titleText">
-          <a href="index.html" title="Home page">CATA BUADES</a>
-        </div>
-      </div>
-      <a class="topnav__link active" href="about.html" title="About page">About</a>
-      <a class="topnav__link" href="hobby.html" title="Hobby Club page">Hobby Club</a>
-      <a class="topnav__link" href="exercises.html" title="Exercises page">Exercises</a>
-      <a class="topnav__link" href="contact.html" title="Contact page">Contact</a>
-      <a href="javascript:void(0);" class="icon" onclick="openMenu()" title="Menu button">
-        <div></div>
-        <div></div>
-        <div></div>
-      </a>
-    </nav>
-  </header>
+		<div class="sectionGrid">
+			<section class="section sectionDescription">
+				<h1 class="title--noMargin">Hi! I'm Cata,</h1>
+				<p>
+					I'm from Mallorca and a year ago I returned to the island
+					after living 12 years in Barcelona.
+				</p>
+				<div class="imageProfile">
+					<img
+						src="img/web/image-profile.jpg"
+						alt="Photo Cata Buades" />
+				</div>
+				<p>
+					I did my studies in
+					<em>Design of Printed and Multimedia Publications</em> at
+					the
+					<a
+						href="https://www.salesianssarria.com/"
+						title="Salesians de Sarrià"
+						>Selesians de Sarrià</a
+					>
+					and I did a
+					<em>Bachelor of Design and Graphic Production</em> at the
+					<a
+						href="https://www.iseclisboa.pt/index.php/en/"
+						title="ISEC"
+						><abbr title="Instituto Superior De Educaçao e Ciências"
+							>ISEC</abbr
+						></a
+					>
+					in Lisbon. <br /><br />
+					In 2017 I was curious about web development and after
+					training I started working in a design studio in Barcelona
+					where I learned to create custom themes for Wordpress. In
+					January 2019 I started working at
+					<a
+						href="https://www.theknotww.com/"
+						title="The Knot Worldwide"
+						>The Knot Worldwide</a
+					>
+					as a front-end developer where I continue to work today.
+				</p>
+			</section>
 
-  <div class="sectionGrid">
-    <section class="section sectionDescription">
-      <h1 class="title--noMargin">Hi! I'm Cata,</h1>
-      <p>I'm from Mallorca and a year ago I returned to the island after living 12 years in Barcelona.</p>
-      <div class="imageProfile">
-        <img src="img/web/image-profile.jpg" alt="Photo Cata Buades">
-      </div>
-      <p>
-        I did my studies in <em>Design of Printed and Multimedia Publications</em> at the <a href="https://www.salesianssarria.com/" title="Salesians de Sarrià">Selesians de Sarrià</a> and I did a <em>Bachelor of Design and Graphic Production</em> at the <a href="https://www.iseclisboa.pt/index.php/en/" title="ISEC"><abbr title="Instituto Superior De Educaçao e Ciências">ISEC</abbr></a> in Lisbon.
-        <br><br>
-        In 2017 I was curious about web development and after training I started working in a design studio in Barcelona where I learned to create custom themes for Wordpress. In January 2019 I started working at <a href="https://www.theknotww.com/" title="The Knot Worldwide">The Knot Worldwide</a> as a front-end developer where I continue to work today.
-      </p>
-    </section>
-  
-    <section class="section section--italic section--small sectionWish">
-      <h2>What am I looking for in AllWomen?</h2>
-      <p>I would like to learn React.js and improve my Javascript skills. Definitely, improve my knowledge, since I feel more comfortable doing the most visual part using CSS.</p>
-      <p>I think the bootcamp is an immersive way to learn, and AllWomen with its part-time course gives me the opportunity to combine it with my work and taking care of my 6 month old baby.</p>
-    </section>
-  
-    <section class="section section--small sectionList">
-      <h2>What is important about me?</h2>
-      <ol>
-        <li>I really like web design.</li>
-        <li>My schedules are crazy.</li>
-        <li>I love fried eggs.</li>
-      </ol>
-    </section>
+			<section class="section section--italic section--small sectionWish">
+				<h2>What am I looking for in AllWomen?</h2>
+				<p>
+					I would like to learn React.js and improve my Javascript
+					skills. Definitely, improve my knowledge, since I feel more
+					comfortable doing the most visual part using CSS.
+				</p>
+				<p>
+					I think the bootcamp is an immersive way to learn, and
+					AllWomen with its part-time course gives me the opportunity
+					to combine it with my work and taking care of my 6 month old
+					baby.
+				</p>
+			</section>
 
-    <section class="section sectionWebsites">
-      <h2>Some useful web pages...</h2>
-      <ul>
-        <li><a href="https://caniuse.com/" title="Can I use...">Can I use...</a></li>
-        <li><a href="https://css-tricks.com/" title="CSS Tricks">CSS Tricks</a></li>
-        <li><a href="https://jensimmons.com/" title="Jen Simmons">Jen Simmons</a></li>
-        <li><a href="https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag" title="Layoud Land">Layout Land</a></li>
-        <li><a href="https://www.superhi.com/" title="Super Hi">Super Hi!</a></li>
-        <li><a href="https://shopify.dev/" title="Shopify Dev">Shopify Dev</a></li>
-        <li><a href="https://stackoverflow.com/" title="Stackoverflow">Stackoverflow</a></li>
-        <li><a href="https://coolors.co/" title="Coolors">Coolors</a></li>
-        <li><a href="https://httpster.net/" title="Httpster">Httpster</a></li>
-        <li><a href="https://www.awwwards.com/" title="Awwwards">Awwwards</a></li>
-      </ul>
-    </section>
+			<section class="section section--small sectionList">
+				<h2>What is important about me?</h2>
+				<ol>
+					<li>I really like web design.</li>
+					<li>My schedules are crazy.</li>
+					<li>I love fried eggs.</li>
+				</ol>
+			</section>
 
-    <section class="section sectionCite">
-      <div class="sectionCite__messageBox">
-        <blockquote>
-          <strong>“First do it, then do it right, then do it better.”</strong>
-          <cite>Addy Osmani</cite>
-        </blockquote>
-      </div>
-    </section>
-  </div>
+			<section class="section sectionWebsites">
+				<h2>Some useful web pages...</h2>
+				<ul>
+					<li>
+						<a href="https://caniuse.com/" title="Can I use..."
+							>Can I use...</a
+						>
+					</li>
+					<li>
+						<a href="https://css-tricks.com/" title="CSS Tricks"
+							>CSS Tricks</a
+						>
+					</li>
+					<li>
+						<a href="https://jensimmons.com/" title="Jen Simmons"
+							>Jen Simmons</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag"
+							title="Layoud Land"
+							>Layout Land</a
+						>
+					</li>
+					<li>
+						<a href="https://www.superhi.com/" title="Super Hi"
+							>Super Hi!</a
+						>
+					</li>
+					<li>
+						<a href="https://shopify.dev/" title="Shopify Dev"
+							>Shopify Dev</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://stackoverflow.com/"
+							title="Stackoverflow"
+							>Stackoverflow</a
+						>
+					</li>
+					<li>
+						<a href="https://coolors.co/" title="Coolors"
+							>Coolors</a
+						>
+					</li>
+					<li>
+						<a href="https://httpster.net/" title="Httpster"
+							>Httpster</a
+						>
+					</li>
+					<li>
+						<a href="https://www.awwwards.com/" title="Awwwards"
+							>Awwwards</a
+						>
+					</li>
+				</ul>
+			</section>
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-</body>
+			<section class="section sectionCite">
+				<div class="sectionCite__messageBox">
+					<blockquote>
+						<strong
+							>“First do it, then do it right, then do it
+							better.”</strong
+						>
+						<cite>Addy Osmani</cite>
+					</blockquote>
+				</div>
+			</section>
+		</div>
+
+		<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>

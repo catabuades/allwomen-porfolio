@@ -1,81 +1,135 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Contact</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <title>Contact</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="manifest" href="site.webmanifest" />
+		<link rel="apple-touch-icon" href="icon.png" />
+		<!-- Place favicon.ico in the root directory -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/contact.css" />
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/contact.css">
+		<meta name="theme-color" content="#fafafa" />
+	</head>
 
-  <meta name="theme-color" content="#fafafa">
-</head>
+	<body>
+		<header class="header">
+			<nav class="topnav" id="myTopnav">
+				<div class="header__title">
+					<div class="header__titleText">
+						<a href="index.html" title="Home page">CATA BUADES</a>
+					</div>
+				</div>
+				<a class="topnav__link" href="about.html" title="About page"
+					>About</a
+				>
+				<a
+					class="topnav__link"
+					href="hobby.html"
+					title="Hobby Club page"
+					>Hobby Club</a
+				>
+				<a
+					class="topnav__link"
+					href="exercises.html"
+					title="Exercises page"
+					>Exercises</a
+				>
+				<a
+					class="topnav__link active"
+					href="projects.html"
+					title="Projects page"
+					>Projects</a
+				>
+				<a
+					class="topnav__link active"
+					href="contact.html"
+					title="Contact page"
+					>Contact</a
+				>
+				<a
+					href="javascript:void(0);"
+					class="icon"
+					onclick="openMenu()"
+					title="Menu button">
+					<div></div>
+					<div></div>
+					<div></div>
+				</a>
+			</nav>
+		</header>
 
-<body>
-  <header class="header">
-    <nav class="topnav" id="myTopnav">
-      <div class="header__title">
-        <div class="header__titleText">
-          <a href="index.html" title="Home page">CATA BUADES</a>
-        </div>
-      </div>
-      <a class="topnav__link" href="about.html" title="About page">About</a>
-      <a class="topnav__link" href="hobby.html" title="Hobby Club page">Hobby Club</a>
-      <a class="topnav__link" href="exercises.html" title="Exercises page">Exercises</a>
-      <a class="topnav__link active" href="contact.html" title="Contact page">Contact</a>
-      <a href="javascript:void(0);" class="icon" onclick="openMenu()" title="Menu button">
-        <div></div>
-        <div></div>
-        <div></div>
-      </a>
-    </nav>
-  </header>
+		<div class="sectionGrid">
+			<section class="section sectionDescription">
+				<h1 class="title--noMargin">Contact me for new projects.</h1>
+				<div>
+					<img
+						class="wave"
+						src="img/web/waving-hand.png"
+						alt="Waving Hand Emoji" />
+				</div>
+			</section>
 
-  <div class="sectionGrid">
-    <section class="section sectionDescription">
-      <h1 class="title--noMargin">Contact me for new projects.</h1>
-      <div>
-        <img class="wave" src="img/web/waving-hand.png" alt="Waving Hand Emoji">
-      </div>
-    </section>
+			<section class="section sectionForm">
+				<form class="" action="contact.html" method="post">
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" />
 
-    <section class="section sectionForm">
-      <form class="" action="contact.html" method="post">
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" />
 
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
+					<label for="phone">Phone number:</label>
+					<input type="text" id="phone" name="phone" />
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+					<label for="message">Message:</label>
+					<textarea id="message" rows="7" name="message"></textarea>
 
-        <label for="phone">Phone number:</label>
-        <input type="text" id="phone" name="phone">
+					<input
+						id="send_to"
+						type="hidden"
+						name="send_to"
+						value="yourEmailHere" />
+					<button type="submit">Submit</button>
+				</form>
+			</section>
 
-        <label for="message">Message:</label>
-        <textarea id="message" rows="7" name="message"></textarea>
+			<section class="sectionMap">
+				<div class="mapouter">
+					<div class="gmap_canvas">
+						<iframe
+							width="100%"
+							height="500px"
+							id="gmap_canvas"
+							src="https://maps.google.com/maps?q=mallorca&t=&z=9&ie=UTF8&iwloc=&output=embed"
+							frameborder="0"
+							scrolling="no"
+							marginheight="0"
+							marginwidth="0"></iframe
+						><style>
+							.gmap_canvas {
+								overflow: hidden;
+								background: none !important;
+								height: 500px;
+								width: 100%;
+							}
+						</style>
+					</div>
+				</div>
+			</section>
+		</div>
 
-        <input id="send_to" type="hidden" name="send_to" value="yourEmailHere">
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-
-    <section class="sectionMap">
-      <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500px" id="gmap_canvas" src="https://maps.google.com/maps?q=mallorca&t=&z=9&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style></div></div>
-    </section>
-  </div>
-
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/forms.js"></script>
-  <script src="js/main.js"></script>
-</body>
+		<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/forms.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
